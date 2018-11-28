@@ -38,7 +38,7 @@ Transactions are stored in {apm-server-ref}/transaction-indices.html[transaction
 === Spans
 Transactions can have 0, 1, or many spans. Spans have a `transaction.id` attribute that refers to their parent transaction. They also have a `parent.id` attribute that refers to the parent span, or their transaction.
 
-Agents typically automatically instrument a variety of of libraries,
+Agents typically automatically instrument a variety of libraries,
 but also provide an API for ad hoc instrumentation of specific code paths. 
 A span contains information about a specific code path that has been executed as part of a transaction.
 This information includes:
